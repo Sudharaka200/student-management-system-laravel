@@ -1,3 +1,89 @@
+
+# Student Management System – Laravel + API + HTML
+
+## Introduction
+
+This is a simple student management system built using Laravel for the backend and HTML/JS (or Vue/React) for the frontend. It includes a RESTful API for managing student records.
+
+##  Features
+
+- Create, Read, Update, and Delete students
+- Search students by ID, name, or email
+- RESTful API endpoints
+- Bootstrap UI with clean design
+- MySQL or SQLite database support
+- Optional Postman Collection for API testing
+
+## Project Structure
+    tudents-management-system/
+    ├── app/
+    ├── database/
+    ├── public/
+    ├── resources/
+    │ └── views/
+    │ ├── index.blade.php
+    │ └── update.blade.php
+    ├── routes/
+    │ └── web.php
+    ├── .env
+    ├── composer.json
+    ├── README.md
+    └── ...
+
+
+
+
+
+
+## Installation
+
+1.Clone the repository
+
+    git clone https://github.com/Sudharaka200/student-management-system-laravel
+    cd student-management-system
+        
+2.Install dependencies
+
+    composer install
+
+3.Environment setup
+
+    cp .env.example .env
+    php artisan key:generate
+
+
+    DB_DATABASE=your_db
+    DB_USERNAME=your_user
+    DB_PASSWORD=your_password
+
+4.Run migrations
+
+    php artisan migrate
+
+
+5.Running the App
+
+    php artisan serve
+
+## API Endpoints
+
+#### Get all items
+
+```http
+  GET /api/items
+```
+
+| Method | Endpoint     | Description                |
+| :-------- | :------- | :------------------------- |
+| `GET` | `/api/students` | Get all students |
+| `GET` | `/api/students/{id}` | Get one student |
+| `POST` | `/api/students	` | Create new student |
+| `PUT` | `/api/students/{id}` | Update student |
+| `DELETE` | `/api/students/{id}	` | Delete student |
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
