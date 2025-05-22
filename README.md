@@ -67,12 +67,6 @@ This is a simple student management system built using Laravel for the backend a
 
 ## API Endpoints
 
-#### Get all items
-
-```http
-  GET /api/items
-```
-
 | Method | Endpoint     | Description                |
 | :-------- | :------- | :------------------------- |
 | `GET` | `/api/students` | Get all students |
